@@ -10,17 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    window.onload = function() {
-        fetchWeatherData('Delhi','metric');
-    };
-
-
 
     const displayWeatherData = (data, unit) => {
         const humidity = data.main.humidity;
         const temperature = data.main.temp;
         const description = data.weather[0].description;
-        const cityName = data.name || "Delhi";
+        const cityName = data.name;
 
 
        
